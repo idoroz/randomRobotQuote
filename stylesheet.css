@@ -1,0 +1,410 @@
+
+
+.btnWrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.robot {
+    position: absolute;
+    width: 512px;
+    height: 512px;
+    /*  background: url(old_stones_wip3-1.jpg) no-repeat;
+  background-size: cover;*/
+    z-index: 0;
+}
+
+img.aRobot {
+    cursor: pointer;
+}
+
+#theRobot {
+    display: none;
+    position: absolute;
+    left: 22%;
+    top: 9%;
+    transform: scale(0.7);
+    z-index: -1;
+}
+
+.bubble {
+    display: none;
+    position: absolute;
+    width: 250px;
+    margin: 10px 12px 6px;
+    padding: 4px 8px 8px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.3), inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    background: #FFFFFF;
+    border-radius: 8px;
+    max-width: 240px;
+    text-shadow: 0 2px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    padding: 5px 5px;
+    left: 16%;
+    margin-top: 2%;
+    z-index: 1;
+}
+
+.innerbubble {
+    padding: 0px;
+    background: white;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+    left: 0;
+    margin-top: -96.4%;
+    max-height: 200px;
+}
+
+p.theQuote {
+    position: relative;
+    max-width: 100%;
+    padding: 5px 5px;
+    text-align: center;
+    vertical-align: middle;
+    height: auto;
+}
+
+
+/*The barcode svg id*/
+
+#code39 {
+    display: none;
+    position: absolute;
+    top: 40.9%;
+    left: 10.5%;
+}
+
+
+/*///The barcode svg id*/
+
+.robInfo {
+    display: none;
+    padding: 0;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1em;
+    width: 710.39px;
+    height: 720px;
+    margin-top: 17.5%;
+    list-style: none;
+    /*border: 1px solid black;*/
+}
+
+.infoProPic {
+    -webkit-filter: sepia(1);
+    filter: sepia(1);
+}
+
+.wantedPosterBCG {
+    display: none;
+    background: url(wanted-poster-template-33.png) no-repeat;
+    background-size: cover;
+    text-transform: capitalize;
+    font-size: 2em;
+    width: 37%;
+    height: 720px;
+    float: right;
+}
+
+.stamp img {
+    position: absolute;
+    transform: scale(0.7) rotate(-22deg);
+    top: 36%;
+    left: 70.6%;
+    z-index: 2;
+}
+
+#lampLight {
+    position: absolute;
+    top: -10%;
+}
+
+@-webkit-keyframes swinging {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-5deg)
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+@keyframes swinging {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+#lampLight {
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.light {
+    position: absolute;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+}
+
+.cord {
+    position: absolute;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-animation: swinging 3.5s ease-in-out forwards infinite;
+    animation: swinging 3.5s ease-in-out forwards infinite;
+    top: 3%;
+}
+
+.lightSwing {
+    position: absolute;
+    -webkit-animation: flicker 20s linear infinite;
+    -moz-animation: flicker 20s linear infinite;
+    animation: flicker 20s linear infinite;
+    left: 0;
+    top: 3%;
+    z-index: 0;
+}
+
+@-webkit-keyframes swinging {
+    0% {
+        -webkit-transform: rotate(10deg);
+    }
+    50% {
+        -webkit-transform: rotate(-5deg)
+    }
+    100% {
+        -webkit-transform: rotate(10deg);
+    }
+}
+
+@keyframes swinging {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-5deg)
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    11% {
+        opacity: .4;
+    }
+    11.25% {
+        opacity: .6;
+    }
+    11.5% {
+        opacity: .4;
+    }
+    18% {
+        opacity: 1;
+    }
+    18.5% {
+        opacity: .9;
+    }
+    22% {
+        opacity: 1;
+    }
+    38.5% {
+        opacity: 1;
+    }
+    39% {
+        opacity: .8;
+    }
+    42% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    60.5% {
+        opacity: 0;
+    }
+    62% {
+        opacity: 0;
+    }
+    63% {
+        opacity: .2;
+    }
+    63.25% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    73% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .8;
+    }
+    79% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    11% {
+        opacity: .4;
+    }
+    11.25% {
+        opacity: .6;
+    }
+    11.5% {
+        opacity: .4;
+    }
+    18% {
+        opacity: 1;
+    }
+    18.5% {
+        opacity: .9;
+    }
+    22% {
+        opacity: 1;
+    }
+    38.5% {
+        opacity: 1;
+    }
+    39% {
+        opacity: .8;
+    }
+    42% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    60.5% {
+        opacity: 0;
+    }
+    62% {
+        opacity: 0;
+    }
+    63% {
+        opacity: .2;
+    }
+    63.25% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    73% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .8;
+    }
+    79% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    6% {
+        opacity: 1;
+    }
+    11% {
+        opacity: .4;
+    }
+    11.25% {
+        opacity: .6;
+    }
+    11.5% {
+        opacity: .4;
+    }
+    18% {
+        opacity: 1;
+    }
+    18.5% {
+        opacity: .9;
+    }
+    22% {
+        opacity: 1;
+    }
+    38.5% {
+        opacity: 1;
+    }
+    39% {
+        opacity: .8;
+    }
+    42% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 1;
+    }
+    60.5% {
+        opacity: 0;
+    }
+    62% {
+        opacity: 0;
+    }
+    63% {
+        opacity: .2;
+    }
+    63.25% {
+        opacity: 0;
+    }
+    65% {
+        opacity: 1;
+    }
+    73% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .8;
+    }
+    79% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

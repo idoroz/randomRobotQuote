@@ -1,0 +1,51 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="stylesheet-Laptop.css">
+    <title></title>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Random Robot - Multiple Random APIs</h1>
+    <div class="btnWrapper">
+        <button id="go">GO!</button>
+        <button id="wanted">Wanted Poster</button>
+    </div>
+    <div class="robot">
+    
+        <img id="theRobot" src="" />
+        <img class="aRobot" src="jail-door-white.png">
+    </div>
+    <div class="bubble"></div>
+    <!-- "barcode"-->
+    <svg id="code39"></svg>
+    <div class="wantedPosterBCG">
+        <ul class="robInfo">
+            <div class="stamp"><img src="neutralized_stamp.png"></div>
+            <li class="robInfo_profPic"><img class="infoProPic" src=""></li>
+            <li class="robInfo_name"> </li>
+            <li class="robInfo_location">Location: </li>
+            <li class="robInfo_id">ID: </li>
+            <li class="robInfo_key">Key: </li>
+            <li class="robInfo_owner">Owner: </li>
+        </ul>
+    </div>
+    <img class="cord" src="lamp-cord.png" />
+    <div class="lightSwing">
+        <img class="light" src="light-glow.png" />
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-rc1/jquery.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jsbarcode/3.3.18/JsBarcode.all.min.js"></script>
+    <script type="text/javascript" src="scripts/getBarcode.js"></script>
+    <script type="text/javascript" src="scripts/robotNames.js"></script>
+    <script type="text/javascript" src="scripts/randomUserID_Location.js"></script>
+    <script type="text/javascript" src="scripts/getRobotProfilePic.js"></script>
+    <script type="text/javascript" src="scripts/getRobotQuote.js"></script>
+</body>
+
+</html>
