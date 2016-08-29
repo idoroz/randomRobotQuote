@@ -60,7 +60,7 @@ $('#go').on('click', function() {
     // 2. Ajax request to randomuser.me to get ID & Location - returns a promise
 
     var req = $.ajax({
-        url: 'http://api.randomuser.me/?nat=gb',
+        url: 'https://api.randomuser.me/?nat=gb',
         dataType: 'json'
     });
 
